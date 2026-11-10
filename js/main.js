@@ -128,16 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const typewriterEl = document.getElementById('typewriter-text');
     if (typewriterEl) {
         const phrases = [
-            'Certified Computer Courses',
-            'Telugu & Hindi Keyboard Typing',
-            'MS Office & Advanced Excel',
-            'DCA & PGDCA Diplomas',
-            'Tally Prime with GST',
-            'Python & Java Coding',
-            'Digital India & CSC Services',
-            'Aadhaar, PAN & Passport',
-            'High Speed Color Xerox & DTP',
-            'Online Job Applications'
+            'All Digital Services',
+            'Color Xerox & Photostat',
+            'Official e-Stamps & Affidavits',
+            'CSC Works & Digi Seva',
+            'Bulk Voice Calls & WhatsApp',
+            'AI Posters & Designing',
+            'Computers Courses (SiCE)',
+            'Tally ERP 9.0 & Tally Prime',
+            'Telugu & Hindi Keyboard Typing'
         ];
         let pIndex = 0;
         let cIndex = 0;
@@ -417,6 +416,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // ===== 11B. FAQ Accordion Toggle =====
+    const faqItems = document.querySelectorAll('.faq-item');
+    if (faqItems.length > 0) {
+        // Open the first item by default
+        faqItems[0].classList.add('active');
+
+        faqItems.forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            if (questionBtn) {
+                questionBtn.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    // Optional: Close others
+                    faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
     // ===== 12. Testimonial Slider =====
     const testimonialTrack = document.getElementById('testimonial-track');
     const testimonialDots = document.querySelectorAll('.testimonial-dot');
@@ -622,5 +642,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('✅ Siva Type & Computers Web App loaded with Telugu & Hindi Keyboard Typing services.');
+    console.log('✅ Siva Type & Computers: All Digital Services, CSC & SiCE Computer Coaching loaded.');
 });
