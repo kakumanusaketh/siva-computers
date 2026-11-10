@@ -487,7 +487,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const name = (formData.get('name') || '').toString().trim();
             const phone = (formData.get('phone') || '').toString().trim();
             const course = (formData.get('course') || '').toString().trim();
-            const timing = (formData.get('timing') || '').toString().trim();
             const message = (formData.get('message') || '').toString().trim();
 
             if (!name || !phone) {
@@ -508,7 +507,6 @@ document.addEventListener('DOMContentLoaded', function () {
             waText += `👤 *Name:* ${name}\n`;
             waText += `📱 *Phone:* ${phone}\n`;
             if (course) waText += `📚 *Course/Service:* ${course}\n`;
-            if (timing) waText += `⏰ *Preferred Time:* ${timing}\n`;
             if (message) waText += `💬 *Message:* ${message}\n`;
             waText += `\nSent via sivacomputers website`;
 

@@ -13,7 +13,7 @@ Official website for **Siva Type & Computers**, established in 1999 in Pidugural
 - **Education & Coaching:** Computer Training Institute (SiCE Franchise) & Telugu/Hindi Computer Keyboard Typing (Anu Script - Apple & DOE keyboards only)
 - **Established:** 1999 (27+ Years of Trusted Service)
 - **Address:** Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla, Palnadu District, Andhra Pradesh — 522413
-- **Google Maps Location:** [https://maps.app.goo.gl/L3iWuotWNSZwYbfq9](https://maps.app.goo.gl/L3iWuotWNSZwYbfq9)
+- **Google Maps Location:** [https://maps.app.goo.gl/7gMN3h46oBvVQaiy8](https://maps.app.goo.gl/7gMN3h46oBvVQaiy8)
 - **Primary WhatsApp / Phone:** `+91 8511 204 304`
 - **Secondary Phone:** `+91 9866 204 304`
 - **Email:** `siva204304@gmail.com`
