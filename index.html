@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siva Type & Computers | All Digital Services, CSC & SiCE Computer Coaching | Piduguralla</title>
-    <meta name="description" content="Siva Type & Computers, Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413. Established in 1999. All Digital Services, Color Xerox, E-Stamps, CSC Digi Seva, Bulk Voice Calls, Bulk WhatsApp, AI Posters, plus SiCE Franchise Computer Courses & Telugu/Hindi Keyboard Typing.">
-    <meta name="keywords" content="All Digital Services Piduguralla, Siva Type Computers Piduguralla, CSC Piduguralla, Digi Seva, e-Stamps Piduguralla, color xerox, bulk voice calls, bulk whatsapp, ai posters, SiCE franchise, DCA, PGDCA, Tally Prime, Tally ERP 9.0, Python, Java, telugu keyboard typing, hindi keyboard typing, 8511204304">
+    <meta name="description" content="Siva Type & Computers, Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413. Established in 1999. All Digital Services, Color Xerox, E-Stamps, Document Translations, CSC Digi Seva, Bulk Voice Calls, Bulk WhatsApp, Ai Posters, plus SiCE Franchise Computer Courses & Telugu/Hindi Keyboard Typing.">
+    <meta name="keywords" content="All Digital Services Piduguralla, Siva Type Computers Piduguralla, Document Translations, CSC Piduguralla, Digi Seva, e-Stamps Piduguralla, color xerox, bulk voice calls, bulk whatsapp, Ai Posters, SiCE franchise, DCA, PGDCA, Tally Prime, Tally ERP 9.0, Python, Java, telugu keyboard typing, hindi keyboard typing, anuscript, apple keyboard, doe keyboard, 8511204304">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -13,7 +13,7 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Siva Type & Computers | All Digital Services & SiCE Computer Coaching (Since 1999)">
-    <meta property="og:description" content="Piduguralla's #1 Center for All Digital Services, Color Xerox, E-Stamps, CSC Digi Seva, Bulk Calls, AI Posters & SiCE Computer Courses.">
+    <meta property="og:description" content="Piduguralla's #1 Center for All Digital Services, Color Xerox, E-Stamps, Document Translations, CSC Digi Seva, Bulk Calls, Ai Posters & SiCE Computer Courses.">
     <meta property="og:image" content="images/logo.png">
     <meta property="og:type" content="website">
 
@@ -21,6 +21,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -74,11 +75,11 @@
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
             <div class="flex items-center gap-3 sm:gap-4 flex-wrap">
                 <span class="inline-flex items-center gap-1.5 text-accent-400 font-semibold">
-                    <i class="fas fa-medal"></i> Established 1999 &bull; 27+ Years of Trusted Digital Services
+                    <i class="fas fa-medal"></i> <span data-en="Established 1999 • 27+ Years of Trusted Digital Services" data-te="స్థాపన 1999 • 27+ సంవత్సరాల నమ్మకమైన డిజిటల్ సేవలు">Established 1999 &bull; 27+ Years of Trusted Digital Services</span>
                 </span>
                 <span class="hidden sm:inline text-gray-500">|</span>
                 <span class="inline-flex items-center gap-1">
-                    <i class="fas fa-map-marker-alt text-red-400"></i> Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413
+                    <i class="fas fa-map-marker-alt text-red-400"></i> <span data-en="Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413" data-te="అమరాన్ బ్యాటరీ భవనం వెనుక, మసీద్ సెంటర్, మెయిన్ రోడ్డు, పిడుగురాళ్ల - 522413">Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413</span>
                 </span>
                 <span class="hidden md:inline text-gray-500">|</span>
                 <span class="hidden md:inline-flex items-center gap-1 text-green-400 font-medium">
@@ -106,14 +107,14 @@
             <div class="flex items-center gap-2 overflow-hidden">
                 <span class="bg-red-700 text-white text-[10px] sm:text-xs uppercase px-2.5 py-0.5 rounded-full tracking-wider animate-pulse flex-shrink-0">SERVICES ACTIVE</span>
                 <span class="truncate">
-                    ⚡ ALL DIGITAL SERVICES, COLOR XEROX, E-STAMPS, DIGI SEVA, BULK VOICE CALLS, WHATSAPP & AI POSTERS OPEN DAILY &bull; Computer Courses with SiCE Franchise & Telugu/Hindi Typing &bull; Call: 8511 204 304!
+                    ⚡ ALL DIGITAL SERVICES, COLOR XEROX, E-STAMPS, DOCUMENT TRANSLATIONS, DIGI SEVA, BULK CALLS & AI POSTERS OPEN DAILY &bull; Computer Courses with SiCE Franchise & Anu Script Typing &bull; Call: 8511 204 304!
                 </span>
             </div>
             <button onclick="document.getElementById('announcement-bar').style.display='none'" class="text-primary-950 hover:text-red-900 ml-2 text-base leading-none font-bold" aria-label="Close announcement">&times;</button>
         </div>
     </div>
 
-    <!-- MAIN BRAND HEADER (ROW 1: LOGO, CONTACTS, INQUIRY CART & ACTION BUTTON) -->
+    <!-- MAIN BRAND HEADER (ROW 1: LOGO, QUICK CONTACTS, INQUIRY CART & ACTION BUTTON) -->
     <header class="bg-white border-b border-gray-100 relative z-30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
             <div class="flex items-center justify-between">
@@ -145,6 +146,17 @@
                         </a>
                     </div>
 
+                    <!-- Language Toggle -->
+                    <button id="lang-toggle" class="bg-gray-100 hover:bg-gray-200 text-primary-700 p-2.5 rounded-full transition-all flex items-center gap-1 text-xs font-bold" title="Switch to Telugu / English">
+                        <i class="fas fa-language text-base"></i>
+                        <span id="lang-label">తెలుగు</span>
+                    </button>
+
+                    <!-- Dark Mode Toggle -->
+                    <button id="dark-toggle" class="bg-gray-100 hover:bg-gray-200 text-primary-700 p-2.5 rounded-full transition-all" title="Toggle Dark/Light Mode">
+                        <i class="fas fa-moon text-base" id="dark-icon"></i>
+                    </button>
+
                     <!-- Inquiry Cart Trigger in Header -->
                     <button id="header-cart-btn" class="relative bg-gray-100 hover:bg-gray-200 text-primary-700 p-2.5 rounded-full transition-all" title="View Inquiry Cart">
                         <i class="fas fa-shopping-basket text-base"></i>
@@ -159,6 +171,12 @@
 
                 <!-- Mobile Menu Button & Mobile Cart -->
                 <div class="flex items-center gap-2 lg:hidden">
+                    <button id="lang-toggle-mobile" class="bg-gray-100 text-primary-700 p-2 rounded-full text-[10px] font-bold" title="Switch Language">
+                        <i class="fas fa-language text-base"></i>
+                    </button>
+                    <button id="dark-toggle-mobile" class="bg-gray-100 text-primary-700 p-2 rounded-full" title="Toggle Dark Mode">
+                        <i class="fas fa-moon text-sm" id="dark-icon-mobile"></i>
+                    </button>
                     <button onclick="document.getElementById('header-cart-btn').click()" class="relative bg-gray-100 text-primary-700 p-2 rounded-full" title="Inquiry Cart">
                         <i class="fas fa-shopping-basket text-base"></i>
                         <span id="cart-count-badge-mobile" class="absolute -top-1 -right-1 bg-red-600 text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">0</span>
@@ -170,16 +188,16 @@
             </div>
         </div>
 
-        <!-- Mobile Drawer with Requested Tabs -->
+        <!-- Mobile Drawer with Clean Short Headings -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-4 pt-3 pb-6 space-y-2 shadow-xl max-h-[85vh] overflow-y-auto">
             <a href="#home" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">🏠 Home</a>
             <a href="#about" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📋 About Us (Since 1999)</a>
             <a href="#prints-works" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">🖨️ Prints & General Works</a>
-            <a href="#estamps-affidavits" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📜 E-Stamps, Notary Affidavits etc</a>
+            <a href="#estamps-affidavits" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📜 E-Stamps & Notary Affidavits</a>
             <a href="#csc-works" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">🏛️ CSC Works (Digi Seva)</a>
-            <a href="#courses" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">🎓 Computers Courses (with SiCE Franchise)</a>
-            <a href="#bulk-services" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📢 Bulk Voice Calls, Bulk Watsup, ai posters</a>
-            <a href="#keyboard-typing" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">⌨️ Telugu & Hindi Keyboard Typing</a>
+            <a href="#courses" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">🎓 Computer Courses</a>
+            <a href="#bulk-services" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📢 Bulk Voice Calls, Bulk WhatsApp, Ai Posters</a>
+            <a href="#keyboard-typing" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">⌨️ Telugu & Hindi Keyboard Typing (Anu Script)</a>
             <a href="#faq" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">❓ FAQ</a>
             <a href="#location" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📍 Location</a>
             <a href="#contact" class="mobile-nav-link block py-2 px-3 rounded-lg text-gray-700 hover:bg-primary-50 font-medium">📞 Contact</a>
@@ -190,20 +208,20 @@
         </div>
     </header>
 
-    <!-- FULL-WIDTH STICKY NAVIGATION BAR (ROW 2: NEVER OVERFLOWS, DISTRIBUTED ACROSS ENTIRE WIDTH) -->
-    <nav id="navbar" class="bg-primary-800 text-white sticky top-0 z-40 shadow-lg border-y border-white/10 hidden lg:block transition-all duration-300">
+    <!-- LIVELY, BRIGHT & CRISP NAVIGATION OPTION BAR (ROW 2: NEVER DULL, PREMIUM PILL ACTIVE DESIGN) -->
+    <nav id="navbar" class="bg-white/98 backdrop-blur-md sticky top-0 z-40 shadow-sm border-b-2 border-accent-500 hidden lg:block transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between gap-1 xl:gap-2 h-11 text-xs xl:text-[13px] font-semibold tracking-tight overflow-x-auto no-scrollbar whitespace-nowrap">
-                <a href="#home" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Home</a>
-                <a href="#about" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">About Us</a>
-                <a href="#prints-works" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Prints & General Works</a>
-                <a href="#estamps-affidavits" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">E-Stamps, Notary Affidavits etc</a>
-                <a href="#csc-works" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">CSC Works</a>
-                <a href="#courses" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Computers Courses (with SiCE Franchise)</a>
-                <a href="#bulk-services" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Bulk Voice Calls, Bulk Watsup, ai posters</a>
-                <a href="#faq" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">FAQ</a>
-                <a href="#location" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Location</a>
-                <a href="#contact" class="nav-link py-2 px-2.5 text-gray-200 hover:text-accent-400 hover:bg-white/10 rounded-md transition-colors">Contact</a>
+            <div class="flex items-center justify-between gap-1 xl:gap-2 h-12 text-xs xl:text-[13px] font-semibold tracking-tight whitespace-nowrap overflow-x-auto no-scrollbar py-1">
+                <a href="#home" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Home</a>
+                <a href="#about" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">About Us</a>
+                <a href="#prints-works" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Prints & General Works</a>
+                <a href="#estamps-affidavits" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">E-Stamps & Notary Affidavits</a>
+                <a href="#csc-works" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">CSC Works</a>
+                <a href="#courses" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Computer Courses</a>
+                <a href="#bulk-services" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Bulk Voice Calls, Bulk WhatsApp, Ai Posters</a>
+                <a href="#faq" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">FAQ</a>
+                <a href="#location" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Location</a>
+                <a href="#contact" class="nav-link py-1.5 px-3 text-gray-700 hover:text-primary-700 hover:bg-primary-50 rounded-lg transition-all">Contact</a>
             </div>
         </div>
     </nav>
@@ -237,14 +255,13 @@
                         అమరాన్ బ్యాటరీ బిల్డింగ్ వెనుక, మసీద్ సెంటర్, మెయిన్ రోడ్డు, పిడుగురాళ్ల - 522413
                     </p>
 
-                    <!-- Exact Requested Dialogue: all digital services -->
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-extrabold text-white leading-tight mb-4">
                         Your One-Stop Destination for<br>
                         <span class="text-accent-400" id="typewriter-text">All Digital Services</span><span class="typewriter-cursor"></span>
                     </h1>
 
                     <p class="text-gray-300 text-base sm:text-lg mb-8 max-w-2xl leading-relaxed">
-                        Piduguralla's most trusted premier center for complete <strong>Digital & Citizen Services</strong> — Color Xerox, Photostat, e-Stamps, Notary Affidavits, CSC Digi Seva, PAN Card, Passport, Bulk Voice Calls, Bulk WhatsApp & AI Posters. Along with certified <strong>Computer Courses (with SiCE Franchise)</strong> and professional <strong>Telugu & Hindi Keyboard Typing</strong>.
+                        Piduguralla's most trusted premier center for complete <strong>Digital & Citizen Services</strong> — Color Xerox, Photostat, e-Stamps, Document Translations (Telugu ⇄ English), Notary Affidavits, CSC Digi Seva, PAN Card, Passport, Bulk Voice Calls, Bulk WhatsApp & Ai Posters. Along with certified <strong>Computer Courses</strong> (SiCE Franchise) and professional <strong>Telugu & Hindi Keyboard Typing (Anu Script - Apple & DOE Keyboards)</strong>.
                     </p>
 
                     <!-- CTAs -->
@@ -286,17 +303,17 @@
                             <img src="images/logo.png" alt="Siva Type Computers Official Logo" class="w-48 h-48 sm:w-56 sm:h-56 object-contain hover:scale-105 transition-transform duration-300">
                         </div>
 
-                        <!-- 2 Focus Pillars (Cleaned naturally) -->
+                        <!-- 2 Focus Pillars -->
                         <div class="grid grid-cols-2 gap-3 mb-4">
                             <div class="bg-primary-900/80 rounded-xl p-3 border border-white/10">
                                 <div class="text-accent-400 text-lg mb-1"><i class="fas fa-print"></i></div>
                                 <h4 class="font-semibold text-white text-sm">Digital & CSC Services</h4>
-                                <p class="text-[11px] text-gray-300">Color Xerox, e-Stamps, CSC Digi Seva, Bulk Calls & AI Posters</p>
+                                <p class="text-[11px] text-gray-300">Color Xerox, e-Stamps, Translations, Digi Seva, Bulk Calls & Ai Posters</p>
                             </div>
                             <div class="bg-primary-900/80 rounded-xl p-3 border border-white/10">
                                 <div class="text-green-400 text-lg mb-1"><i class="fas fa-graduation-cap"></i></div>
                                 <h4 class="font-semibold text-white text-sm">Computer Coaching (SiCE)</h4>
-                                <p class="text-[11px] text-gray-300">SiCE Franchise Courses & Telugu/Hindi Keyboard Typing</p>
+                                <p class="text-[11px] text-gray-300">Certified Courses & Anu Script Typing (Apple & DOE Keyboards)</p>
                             </div>
                         </div>
 
@@ -309,13 +326,16 @@
                                 <i class="fas fa-check text-accent-400"></i> Authorized e-Stamps & Notary Affidavits
                             </li>
                             <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-accent-400"></i> Document Translations (Telugu to English & English to Telugu)
+                            </li>
+                            <li class="flex items-center gap-2">
                                 <i class="fas fa-check text-accent-400"></i> Digi Seva Kendra & Central/State Citizen Schemes
                             </li>
                             <li class="flex items-center gap-2">
-                                <i class="fas fa-check text-accent-400"></i> Bulk Voice Calls, Bulk WhatsApp & AI Posters
+                                <i class="fas fa-check text-accent-400"></i> Bulk Voice Calls, Bulk WhatsApp & Ai Posters
                             </li>
                             <li class="flex items-center gap-2">
-                                <i class="fas fa-check text-accent-400"></i> SiCE Franchise Certified Courses (Tally ERP 9.0, Python, DCA)
+                                <i class="fas fa-check text-accent-400"></i> Anu Script Typing (Apple & DOE Keyboards Only)
                             </li>
                         </ul>
 
@@ -341,10 +361,11 @@
         <div class="whitespace-nowrap flex marquee-track text-xs sm:text-sm font-semibold text-primary-700">
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> High Speed Color Xerox & Photostat</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Official e-Stamp Services</span>
+            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Document Translations (Telugu ⇄ English)</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Legal & Notary Affidavits</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Digi Seva Kendra</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Bulk Voice Calls & WhatsApp Marketing</span>
-            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> AI Posters & Creative Design</span>
+            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Ai Posters & Creative Design</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> PAN Card Applications & Seeding</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Aadhaar Color PVC Prints</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Passport Online Services</span>
@@ -352,17 +373,17 @@
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> TTD & Pilgrimage Darshan Tickets</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> SiCE Franchise Computer Courses</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Tally Prime & Tally ERP 9.0</span>
-            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Telugu & Hindi Keyboard Typing</span>
+            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Anu Script Typing (Apple & DOE Keyboards)</span>
             <!-- Repeating items for smooth loop -->
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> High Speed Color Xerox & Photostat</span>
+            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Document Translations (Telugu ⇄ English)</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Official e-Stamp Services</span>
-            <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Legal & Notary Affidavits</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Digi Seva Kendra</span>
             <span class="mx-4 flex items-center gap-2"><i class="fas fa-circle text-[8px] text-accent-500"></i> Bulk Voice Calls & WhatsApp Marketing</span>
         </div>
     </div>
 
-    <!-- ABOUT SECTION (CLEANED) -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
@@ -379,7 +400,7 @@
                                 Piduguralla's Central Hub for All Digital Services
                             </h3>
                             <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                                Established in 1999, <strong>Siva Type and Computers (శివ టైప్ & కంప్యూటర్స్)</strong> has stood as the premier center for comprehensive digital solutions, printing, government documentation, and professional computer education.
+                                Established in 1999, <strong>Siva Type and Computers (శివ టైప్ & కంప్యూటర్స్)</strong> has stood as the premier center for comprehensive digital solutions, printing, document translations, government documentation, and professional computer education.
                             </p>
 
                             <!-- Mini Stats -->
@@ -402,7 +423,7 @@
                     </div>
                 </div>
 
-                <!-- Content Right (7 cols - Naturally Phrased) -->
+                <!-- Content Right (7 cols) -->
                 <div class="lg:col-span-7" data-aos="fade-left">
                     <div class="inline-flex items-center gap-2 text-accent-600 font-bold text-xs uppercase tracking-wider mb-2">
                         <span class="w-6 h-[2px] bg-accent-500"></span> ABOUT SIVA TYPE & COMPUTERS
@@ -414,7 +435,7 @@
                         <strong class="text-primary-600 font-semibold">Siva Type and Computers (శివ టైప్ & కంప్యూటర్స్)</strong> is situated at the <strong>Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413 (Palnadu District, A.P.)</strong>.
                     </p>
                     <p class="text-gray-600 text-base leading-relaxed mb-6">
-                        We provide fast, high-quality digital citizen services — including heavy-duty Color Xerox, legal e-Stamps, notary affidavits, CSC Digi Seva citizen facilitation, Bulk Voice Calls, WhatsApp marketing, and AI posters. We also operate an established computer training institute offering certified programs with the recognized <strong>SiCE Franchise</strong> alongside specialized Telugu & Hindi computer keyboard typing coaching.
+                        We provide fast, high-quality digital citizen services — including heavy-duty Color Xerox, legal e-Stamps, certified Document Translations (Telugu to English & English to Telugu), notary affidavits, CSC Digi Seva citizen facilitation, Bulk Voice Calls, WhatsApp marketing, and Ai Posters. We also operate an established computer training institute offering certified programs with the recognized <strong>SiCE Franchise</strong> alongside specialized <strong>Anu Script Telugu & Hindi computer keyboard typing coaching on Apple & DOE keyboards</strong>.
                     </p>
 
                     <!-- Feature Grid -->
@@ -424,8 +445,8 @@
                                 <i class="fas fa-print"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-sm text-primary-700">Commercial Printing & DTP</h4>
-                                <p class="text-xs text-gray-600">High speed Color Xerox, Photostat, DTP in Telugu & English, Spiral Binding & Lamination.</p>
+                                <h4 class="font-heading font-bold text-sm text-primary-700">Commercial Printing & Translations</h4>
+                                <p class="text-xs text-gray-600">Color Xerox, DTP in Telugu & English, Document Translations, Spiral Binding & Lamination.</p>
                             </div>
                         </div>
 
@@ -454,8 +475,8 @@
                                 <i class="fas fa-bullhorn"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-sm text-primary-700">Bulk Calls, WhatsApp & AI Posters</h4>
-                                <p class="text-xs text-gray-600">Promotional Voice broadcasting, bulk WhatsApp messaging & AI-generated posters.</p>
+                                <h4 class="font-heading font-bold text-sm text-primary-700">Bulk Calls, WhatsApp & Ai Posters</h4>
+                                <p class="text-xs text-gray-600">Promotional Voice broadcasting, bulk WhatsApp messaging & Ai Posters design.</p>
                             </div>
                         </div>
                     </div>
@@ -464,7 +485,7 @@
         </div>
     </section>
 
-    <!-- SECTION 1: PRINTS & GENERAL WORKS (CLEAN BADGE) -->
+    <!-- SECTION 1: PRINTS & GENERAL WORKS (WITH DOCUMENT TRANSLATIONS) -->
     <section id="prints-works" class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -475,7 +496,7 @@
                     Prints & General Works
                 </h2>
                 <p class="text-gray-600 text-sm sm:text-base">
-                    Commercial grade high-speed Color Xerox, Photostat, DTP typesetting, spiral binding, and professional document finishing.
+                    Commercial grade high-speed Color Xerox, Photostat, Document Translations (Telugu ⇄ English), DTP typesetting, spiral binding, and finishing.
                 </p>
             </div>
 
@@ -496,7 +517,27 @@
                     </div>
                 </div>
 
-                <!-- 2. Photostat & B/W Copies -->
+                <!-- 2. DOCUMENT TRANSLATIONS (NEW SERVICE ADDED) -->
+                <div class="service-catalog-item bg-gradient-to-br from-blue-50 to-white rounded-2xl p-5 border-2 border-blue-500 shadow-sm hover:shadow-xl transition-all flex flex-col" data-cat="print">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <span class="bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Telugu ⇄ English</span>
+                    </div>
+                    <h4 class="font-heading font-bold text-sm text-blue-950 mb-1">Document Translations</h4>
+                    <p class="text-xs text-gray-700 mb-4 flex-1">
+                        Professional, accurate translation of official legal documents, affidavits, certificates, land deeds, government orders, applications, and court petitions from <strong>Telugu to English and English to Telugu</strong>.
+                    </p>
+                    <div class="flex items-center justify-between text-xs pt-3 border-t border-blue-100">
+                        <span class="text-blue-700 font-bold">Certified & Quick</span>
+                        <button class="add-to-inquiry-btn bg-blue-600 hover:bg-blue-700 text-white font-semibold text-[11px] px-2.5 py-1 rounded-lg" data-title="Document Translations (Telugu & English)">
+                            <i class="fas fa-plus-circle text-xs mr-1"></i> Add to Inquiry
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Photostat & B/W Copies -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-copy"></i>
@@ -511,13 +552,13 @@
                     </div>
                 </div>
 
-                <!-- 3. DTP Telugu & English -->
+                <!-- 4. DTP Telugu & English -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-keyboard"></i>
                     </div>
                     <h4 class="font-heading font-bold text-sm text-primary-700 mb-1">DTP (Telugu & English Typing)</h4>
-                    <p class="text-xs text-gray-600 mb-4 flex-1">Desktop publishing, page setting, books, pamphlets, wedding/event cards, Telugu & English typing work.</p>
+                    <p class="text-xs text-gray-600 mb-4 flex-1">Desktop publishing using Anu Script, page setting, books, pamphlets, wedding/event cards, Telugu & English typing work.</p>
                     <div class="flex items-center justify-between text-xs pt-3 border-t border-gray-100">
                         <span class="text-gray-500 font-medium">Expert</span>
                         <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-2.5 py-1 rounded-lg" data-title="DTP (Telugu & English Typing)">
@@ -526,7 +567,7 @@
                     </div>
                 </div>
 
-                <!-- 4. Spiral Binding & Hard Binding -->
+                <!-- 5. Spiral Binding & Hard Binding -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-book"></i>
@@ -541,7 +582,7 @@
                     </div>
                 </div>
 
-                <!-- 5. Lamination Services -->
+                <!-- 6. Lamination Services -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-id-card"></i>
@@ -556,7 +597,7 @@
                     </div>
                 </div>
 
-                <!-- 6. Scanning & Email -->
+                <!-- 7. Scanning & Email -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-envelope-open-text"></i>
@@ -571,7 +612,7 @@
                     </div>
                 </div>
 
-                <!-- 7. Photo Printing -->
+                <!-- 8. Photo Printing -->
                 <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
                     <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg mb-3">
                         <i class="fas fa-camera"></i>
@@ -586,26 +627,11 @@
                     </div>
                 </div>
 
-                <!-- 8. Resume & General Job Works -->
-                <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="print">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3">
-                        <i class="fas fa-file-invoice"></i>
-                    </div>
-                    <h4 class="font-heading font-bold text-sm text-primary-700 mb-1">Resume & Project Job Works</h4>
-                    <p class="text-xs text-gray-600 mb-4 flex-1">Professional biodata and resume creation, job application typing, PDF formatting, and student project printouts.</p>
-                    <div class="flex items-center justify-between text-xs pt-3 border-t border-gray-100">
-                        <span class="text-gray-500 font-medium">Custom</span>
-                        <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-2.5 py-1 rounded-lg" data-title="Resume & Project Job Works">
-                            <i class="fas fa-plus-circle text-xs mr-1"></i> Add to Inquiry
-                        </button>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- SECTION 2: E-STAMPS, NOTARY AFFIDAVITS ETC (CLEAN BADGE) -->
+    <!-- SECTION 2: E-STAMPS & NOTARY AFFIDAVITS (REMOVED "ETC") -->
     <section id="estamps-affidavits" class="py-20 bg-white border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -613,7 +639,7 @@
                     <i class="fas fa-stamp"></i> OFFICIAL LEGAL DOCUMENTATION
                 </div>
                 <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-primary-700 leading-tight mb-3">
-                    E-Stamps, Notary Affidavits etc
+                    E-Stamps & Notary Affidavits
                 </h2>
                 <p class="text-gray-600 text-sm sm:text-base">
                     Authorized e-Stamp paper procurement, notary affidavit drafting, agreements, private EC & certified copies in Piduguralla.
@@ -734,7 +760,7 @@
         </div>
     </section>
 
-    <!-- SECTION 3: CSC WORKS (WITH DIGI SEVA SERVICE - CLEAN BADGE) -->
+    <!-- SECTION 3: CSC WORKS (WITH DIGI SEVA SERVICE) -->
     <section id="csc-works" class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -807,7 +833,7 @@
                         <i class="fas fa-passport"></i>
                     </div>
                     <h4 class="font-heading font-bold text-sm text-primary-700 mb-1">Passport Online Services</h4>
-                    <p class="text-xs text-gray-600 mb-4 flex-1">Fresh passport application, renewals, PSK appointment booking, Tatkal slots, Police Clearance Certificates (PCC), and document verification.</p>
+                    <p class="text-xs text-gray-600 mb-4 flex-1">Fresh passport application, renewals, PSK appointment booking, Tatkal slots, and Police Clearance Certificates (PCC).</p>
                     <div class="flex items-center justify-between text-xs pt-3 border-t border-gray-100">
                         <span class="text-gray-500 font-medium">Complete Guidance</span>
                         <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-2.5 py-1 rounded-lg" data-title="Passport Online Services">
@@ -876,11 +902,26 @@
                     </div>
                 </div>
 
+                <!-- 9. Employee Provident Fund (EPF) Services -->
+                <div class="service-catalog-item bg-white rounded-2xl p-5 border border-gray-200 hover:border-primary-400 hover:shadow-lg transition-all flex flex-col" data-cat="govt-services">
+                    <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg mb-3">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h4 class="font-heading font-bold text-sm text-primary-700 mb-1" data-en="EPF / PF Services" data-te="EPF / PF సేవలు">EPF / PF Services</h4>
+                    <p class="text-xs text-gray-600 mb-4 flex-1" data-en="Employee Provident Fund (EPF) passbook download, UAN activation, EPF withdrawal (Form 19/10C), PF transfer, KYC update, nomination (e-Nomination), and pension (EPS) claim assistance." data-te="ఎంప్లాయీ ప్రావిడెంట్ ఫండ్ (EPF) పాస్‌బుక్ డౌన్‌లోడ్, UAN యాక్టివేషన్, EPF ఉపసంహరణ (ఫారం 19/10C), PF బదిలీ, KYC అప్‌డేట్, నామినేషన్ (e-Nomination), మరియు పెన్షన్ (EPS) క్లెయిమ్ సహాయం.">Employee Provident Fund (EPF) passbook download, UAN activation, EPF withdrawal (Form 19/10C), PF transfer, KYC update, nomination (e-Nomination), and pension (EPS) claim assistance.</p>
+                    <div class="flex items-center justify-between text-xs pt-3 border-t border-gray-100">
+                        <span class="text-gray-500 font-medium">Online Assisted</span>
+                        <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-2.5 py-1 rounded-lg" data-title="EPF / PF Services">
+                            <i class="fas fa-plus-circle text-xs mr-1"></i> Add to Inquiry
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: BULK VOICE CALLS, BULK WATSUP, AI POSTERS (CLEAN BADGE) -->
+    <!-- SECTION 4: BULK VOICE CALLS, BULK WHATSAPP & AI POSTERS (CAPITALIZED "Ai Posters") -->
     <section id="bulk-services" class="py-20 bg-white border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -888,7 +929,7 @@
                     <i class="fas fa-bullhorn"></i> MARKETING & AI SOLUTIONS
                 </div>
                 <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-primary-700 leading-tight mb-3">
-                    Bulk Voice Calls, Bulk Watsup, AI Posters
+                    Bulk Voice Calls, Bulk WhatsApp & Ai Posters
                 </h2>
                 <p class="text-gray-600 text-sm sm:text-base">
                     Next-generation digital marketing and automated broadcasting tools for local businesses, political leaders, events, and schools.
@@ -933,19 +974,19 @@
                     </div>
                 </div>
 
-                <!-- 3. AI Posters & Graphics Design -->
+                <!-- 3. Ai Posters & Creative Design -->
                 <div class="service-catalog-item bg-white rounded-2xl p-6 border border-gray-200 hover:border-accent-500 hover:shadow-xl transition-all flex flex-col">
                     <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
                         <i class="fas fa-wand-magic-sparkles"></i>
                     </div>
                     <span class="text-[10px] font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-full inline-block w-fit mb-2">Modern AI Design</span>
-                    <h3 class="font-heading font-bold text-base text-primary-700 mb-2">AI Posters & Designing</h3>
+                    <h3 class="font-heading font-bold text-base text-primary-700 mb-2">Ai Posters & Designing</h3>
                     <p class="text-xs text-gray-600 leading-relaxed mb-4 flex-1">
-                        Stunning promotional posters, social media banners, Telugu festival greetings, commercial flyers, and campaign graphics designed with cutting-edge artificial intelligence design tools for unmatched visual appeal.
+                        Stunning promotional Ai Posters, social media banners, Telugu festival greetings, commercial flyers, and campaign graphics designed with cutting-edge artificial intelligence design tools for unmatched visual appeal.
                     </p>
                     <div class="flex items-center justify-between text-xs pt-3 border-t border-gray-100">
                         <span class="text-gray-500 font-semibold">Custom Graphics</span>
-                        <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-3 py-1.5 rounded-lg" data-title="AI Posters & Designing">
+                        <button class="add-to-inquiry-btn bg-primary-600 hover:bg-primary-700 text-white font-semibold text-[11px] px-3 py-1.5 rounded-lg" data-title="Ai Posters & Designing">
                             <i class="fas fa-plus-circle mr-1"></i> Add to Inquiry
                         </button>
                     </div>
@@ -973,7 +1014,7 @@
         </div>
     </section>
 
-    <!-- SECTION 5: COMPUTERS COURSES (WITH SICE FRANCHISE - CLEAN BADGE) -->
+    <!-- SECTION 5: COMPUTER COURSES (CLEAN TITLE, SICE BADGE INSIDE) -->
     <section id="courses" class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
@@ -981,7 +1022,7 @@
                     <i class="fas fa-graduation-cap"></i> AUTHORISED SiCE FRANCHISE &bull; CERTIFIED PROGRAMS
                 </div>
                 <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-primary-700 leading-tight mb-3">
-                    Computers Courses (with SiCE Franchise)
+                    Computer Courses
                 </h2>
                 <p class="text-gray-600 text-sm sm:text-base">
                     Recognized certification programs with individual 1:1 computer lab practice, tailored for students, job aspirants, and working professionals in Piduguralla.
@@ -1317,36 +1358,36 @@
         </div>
     </section>
 
-    <!-- KEYBOARD TYPING IN TELUGU & HINDI SECTION -->
+    <!-- KEYBOARD TYPING IN TELUGU & HINDI SECTION (ANUSCRIPT WITH APPLE & DOE KEYBOARDS ONLY) -->
     <section id="keyboard-typing" class="py-16 bg-gradient-to-r from-primary-700 via-primary-600 to-primary-800 text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="grid lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-8" data-aos="fade-right">
                     <span class="inline-flex items-center gap-1.5 bg-accent-500/20 text-accent-300 border border-accent-400/30 text-xs font-bold px-3 py-1 rounded-full mb-3">
-                        <i class="fas fa-keyboard text-accent-400"></i> SPECIALIZED LANGUAGE TYPING
+                        <i class="fas fa-keyboard text-accent-400"></i> SPECIALIZED ANU SCRIPT TYPING
                     </span>
                     <h2 class="text-2xl sm:text-3xl lg:text-4xl font-heading font-extrabold text-white mb-2">
-                        Computer Keyboard Typing in Telugu & Hindi
+                        Telugu & Hindi Keyboard Typing
                     </h2>
                     <p class="font-telugu text-accent-300 text-base sm:text-lg font-semibold mb-4">
-                        తెలుగు & హిందీ కంప్యూటర్ కీబోర్డ్ టైపింగ్ &bull; Anu Script, InScript, Unicode & Kruti Dev
+                        తెలుగు & హిందీ కంప్యూటర్ కీబోర్డ్ టైపింగ్ &bull; Anu Script (Apple & DOE Keyboards Only)
                     </p>
                     <p class="text-gray-200 text-xs sm:text-sm leading-relaxed mb-6 max-w-2xl">
-                        We provide complete hands-on computer keyboard typing training in <strong>Telugu and Hindi languages</strong>. Essential for Government office clerks, Court typists, DTP operators, media/press centers, schools, and legal documentation.
+                        We provide complete hands-on computer keyboard typing training in <strong>Telugu and Hindi languages using Anu Script with Apple and DOE keyboards only</strong>. Essential for Government office clerks, Court typists, DTP operators, media/press centers, schools, and legal documentation.
                     </p>
 
                     <div class="grid sm:grid-cols-3 gap-3 mb-6">
                         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                            <h4 class="font-bold text-accent-400 text-xs mb-1">Telugu Keyboard Typing</h4>
-                            <p class="text-[11px] text-gray-300">Anu Script, Modular, Apple, InScript, and Unicode font typing.</p>
+                            <h4 class="font-bold text-accent-400 text-xs mb-1">Anu Script Apple Keyboard</h4>
+                            <p class="text-[11px] text-gray-300">High-speed touch typing on standard Apple keyboard layout for Telugu & Hindi.</p>
                         </div>
                         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
-                            <h4 class="font-bold text-accent-400 text-xs mb-1">Hindi Keyboard Typing</h4>
-                            <p class="text-[11px] text-gray-300">Kruti Dev, Devlys, Remington & Government InScript layouts.</p>
+                            <h4 class="font-bold text-accent-400 text-xs mb-1">Anu Script DOE Keyboard</h4>
+                            <p class="text-[11px] text-gray-300">Official Department of Electronics (DOE) standard layout touch typing practice.</p>
                         </div>
                         <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
                             <h4 class="font-bold text-accent-400 text-xs mb-1">High Speed & Accuracy</h4>
-                            <p class="text-[11px] text-gray-300">Daily speed building drills with zero error certification focus.</p>
+                            <p class="text-[11px] text-gray-300">Daily speed building drills with zero error certification focus on PC keyboards.</p>
                         </div>
                     </div>
 
@@ -1354,7 +1395,7 @@
                         <a href="#contact" class="bg-accent-500 hover:bg-accent-600 text-primary-950 font-bold px-6 py-2.5 rounded-full text-xs transition-all shadow">
                             Enroll for Typing Batch
                         </a>
-                        <button class="add-to-inquiry-btn bg-white/15 hover:bg-white/25 text-white font-semibold text-xs px-4 py-2.5 rounded-full border border-white/20 transition-all" data-title="Telugu & Hindi Keyboard Typing">
+                        <button class="add-to-inquiry-btn bg-white/15 hover:bg-white/25 text-white font-semibold text-xs px-4 py-2.5 rounded-full border border-white/20 transition-all" data-title="Telugu & Hindi Keyboard Typing (Anu Script)">
                             <i class="fas fa-plus-circle text-xs mr-1"></i> Add to Inquiry
                         </button>
                     </div>
@@ -1367,7 +1408,7 @@
                         </div>
                         <h3 class="font-heading font-bold text-lg text-white mb-2">Individual Computer Practice</h3>
                         <p class="text-xs text-gray-300 mb-4 leading-relaxed">
-                            Every student gets dedicated system time with live typing tutor software, sentence correction, and exam passage simulations.
+                            Every student gets dedicated system time with live Anu Script typing practice on Apple & DOE keyboard layouts with personalized error correction.
                         </p>
                         <div class="text-xs font-semibold text-accent-300 pt-3 border-t border-white/10">
                             Batch Timings: 7:30 AM to 8:30 PM
@@ -1378,7 +1419,7 @@
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
+    <!-- FAQ SECTION (UPDATED FAQ 3 WITH ANU SCRIPT APPLE & DOE KEYBOARDS) -->
     <section id="faq" class="py-20 bg-gray-50 border-t border-gray-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-14" data-aos="fade-up">
@@ -1416,14 +1457,14 @@
                     </div>
                 </div>
 
-                <!-- FAQ 3 -->
+                <!-- FAQ 3 (UPDATED: ANU SCRIPT WITH APPLE & DOE KEYBOARDS ONLY) -->
                 <div class="faq-item bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden transition-all">
                     <button class="faq-question w-full p-5 text-left flex items-center justify-between gap-4 font-heading font-bold text-sm sm:text-base text-primary-700 hover:text-accent-600 transition-colors">
                         <span>3. How is the Telugu & Hindi keyboard typing training conducted?</span>
                         <i class="fas fa-chevron-down faq-chevron text-xs text-gray-400 transition-transform duration-300"></i>
                     </button>
                     <div class="faq-answer px-5 pb-5 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100 pt-3">
-                        Training is 100% computer keyboard-based. You will learn touch typing using standardized keyboard layouts such as <strong>Anu Script, InScript, and Unicode</strong> for Telugu, plus <strong>Kruti Dev & InScript</strong> for Hindi, enabling you to work professionally in DTP, government offices, and media press centers.
+                        Training is 100% computer keyboard-based using <strong>Anu Script with Apple and DOE keyboards only</strong>. You will learn touch typing on these industry-standard layouts, enabling you to work professionally in DTP centers, government departments, courts, and private offices with fast speed and high accuracy.
                     </div>
                 </div>
 
@@ -1553,7 +1594,7 @@
                     </div>
                     <h3 class="font-heading font-bold text-lg text-primary-700 mb-2">Fastest Digital Services</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">
-                        No endless queues. High-speed Color Xerox, on-the-spot e-Stamp papers, Digi Seva citizen work, and immediate PAN applications.
+                        No endless queues. High-speed Color Xerox, on-the-spot e-Stamp papers, certified Document Translations, Digi Seva, and immediate PAN applications.
                     </p>
                 </div>
 
@@ -1584,9 +1625,9 @@
                     <div class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
                         <i class="fas fa-bullhorn"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-lg text-primary-700 mb-2">Bulk Marketing & AI Design</h3>
+                    <h3 class="font-heading font-bold text-lg text-primary-700 mb-2">Bulk Marketing & Ai Posters</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">
-                        Automated bulk voice calls, WhatsApp broadcasts, and AI-designed promotional posters to grow local businesses and election outreach.
+                        Automated bulk voice calls, WhatsApp broadcasts, and modern Ai Posters designed to grow local businesses and election outreach.
                     </p>
                 </div>
 
@@ -1595,9 +1636,9 @@
                     <div class="w-14 h-14 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all">
                         <i class="fas fa-keyboard"></i>
                     </div>
-                    <h3 class="font-heading font-bold text-lg text-primary-700 mb-2">Telugu & Hindi Keyboard Typing</h3>
+                    <h3 class="font-heading font-bold text-lg text-primary-700 mb-2">Anu Script Keyboard Typing</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">
-                        Individual computer screen practice for Telugu & Hindi keyboard touch typing with Anu Script, InScript, and Unicode layouts.
+                        Individual computer screen practice for Telugu & Hindi keyboard touch typing using Anu Script with Apple and DOE keyboard layouts.
                     </p>
                 </div>
 
@@ -1633,7 +1674,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="text-base sm:text-lg text-gray-200 italic max-w-2xl mx-auto mb-6">
-                            "Got my official rental e-Stamp and Color Xerox done in 10 minutes at Siva Computers. The fastest service and most polite staff in Piduguralla!"
+                            "Got my official rental e-Stamp, certified Telugu to English translation, and Color Xerox done in 15 minutes at Siva Computers. The fastest service in Piduguralla!"
                         </p>
                         <h4 class="font-bold text-white text-base">K. Venkat Rao</h4>
                         <p class="text-xs text-accent-300">Business Owner &bull; Piduguralla</p>
@@ -1645,7 +1686,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="text-base sm:text-lg text-gray-200 italic max-w-2xl mx-auto mb-6">
-                            "Learned Tally ERP 9.0, Tally Prime GST, and Telugu keyboard typing here. The SiCE franchise certificate helped me get an accountant role in a regional firm!"
+                            "Learned Tally ERP 9.0, Tally Prime GST, and Anu Script typing on Apple keyboard here. The SiCE franchise certificate helped me get an accountant role in a regional firm!"
                         </p>
                         <h4 class="font-bold text-white text-base">B. Lakshmi Prasanna</h4>
                         <p class="text-xs text-accent-300">Accounting Graduate &bull; Piduguralla</p>
@@ -1657,7 +1698,7 @@
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                         </div>
                         <p class="text-base sm:text-lg text-gray-200 italic max-w-2xl mx-auto mb-6">
-                            "For our family's Aadhaar PVC smart cards, PAN card, passport application, and Bulk WhatsApp campaign for our shop, Siva Computers is our one-stop destination for years."
+                            "For our family's Aadhaar PVC smart cards, PAN card, passport application, and Ai Posters design for our business, Siva Computers is our one-stop destination for years."
                         </p>
                         <h4 class="font-bold text-white text-base">M. Srinivasa Reddy</h4>
                         <p class="text-xs text-accent-300">CSC Citizen Services User</p>
@@ -1777,13 +1818,14 @@
                                     <select name="course" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 outline-none text-xs sm:text-sm bg-white text-gray-700">
                                         <option value="">Select a Service or Course</option>
                                         <optgroup label="Digital & Citizen Services">
+                                            <option value="Document Translations (Telugu to English & English to Telugu)">Document Translations (Telugu ⇄ English)</option>
                                             <option value="Prints & General Works">Prints & General Works (Color Xerox / DTP)</option>
                                             <option value="e-Stamp Services">e-Stamp Services</option>
                                             <option value="Notary Affidavits & Legal Drafting">Notary Affidavits & Legal Drafting</option>
                                             <option value="Digi Seva Service">Digi Seva Service</option>
                                             <option value="Bulk Voice Calls">Bulk Voice Calls</option>
                                             <option value="Bulk WhatsApp Marketing">Bulk WhatsApp Marketing</option>
-                                            <option value="AI Posters & Designing">AI Posters & Designing</option>
+                                            <option value="Ai Posters & Designing">Ai Posters & Designing</option>
                                             <option value="PAN Card & Seeding">PAN Card Application & Seeding</option>
                                             <option value="Aadhaar PVC Print">Aadhaar PVC Smart Card Print</option>
                                             <option value="Passport Online Services">Passport Online Services</option>
@@ -1791,6 +1833,7 @@
                                             <option value="TTD / Pilgrimage Darshan Tickets">TTD & Pilgrimage Darshan Tickets</option>
                                             <option value="Digital Signatures (DSC)">Digital Signatures (DSC)</option>
                                             <option value="Spiral Binding & Lamination">Spiral Binding & Lamination</option>
+                                            <option value="EPF / PF Services">EPF / PF Services (Withdrawal, Transfer, KYC)</option>
                                         </optgroup>
                                         <optgroup label="Computer Courses (SiCE Franchise)">
                                             <option value="Tally ERP 9.0">Tally ERP 9.0</option>
@@ -1802,8 +1845,8 @@
                                             <option value="Python Programming">Python Programming</option>
                                             <option value="Core Java Programming">Core Java Programming</option>
                                             <option value="C & C++ Programming">C & C++ Programming</option>
-                                            <option value="Telugu Keyboard Typing">Telugu Computer Keyboard Typing</option>
-                                            <option value="Hindi Keyboard Typing">Hindi Computer Keyboard Typing</option>
+                                            <option value="Telugu Keyboard Typing (Anu Script)">Telugu Keyboard Typing (Anu Script - Apple/DOE)</option>
+                                            <option value="Hindi Keyboard Typing (Anu Script)">Hindi Keyboard Typing (Anu Script - Apple/DOE)</option>
                                             <option value="Spoken English">Spoken English</option>
                                             <option value="Spoken Hindi">Spoken Hindi</option>
                                         </optgroup>
@@ -1864,7 +1907,7 @@
                         </div>
                     </div>
                     <p class="text-gray-400 leading-relaxed mb-4">
-                        Piduguralla's most trusted center for All Digital Services (Color Xerox, e-Stamps, CSC Digi Seva, Bulk Calls, AI Posters) and SiCE Franchise certified computer courses & keyboard typing. Established in 1999.
+                        Piduguralla's most trusted center for All Digital Services (Color Xerox, e-Stamps, Document Translations, CSC Digi Seva, Bulk Calls, Ai Posters) and SiCE Franchise certified computer courses & keyboard typing. Established in 1999.
                     </p>
                     <div class="flex gap-2">
                         <a href="tel:8511204304" class="w-9 h-9 rounded-xl bg-white/5 hover:bg-accent-500 hover:text-primary-950 flex items-center justify-center transition-all" title="Call Us">
@@ -1887,19 +1930,19 @@
                     <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Digital & Citizen Services</h4>
                     <ul class="space-y-2">
                         <li><a href="#prints-works" class="hover:text-accent-400 transition-colors">Prints & General Works</a></li>
+                        <li><a href="#prints-works" class="hover:text-accent-400 transition-colors">Document Translations (Telugu ⇄ English)</a></li>
                         <li><a href="#prints-works" class="hover:text-accent-400 transition-colors">Color Xerox & Photostat</a></li>
                         <li><a href="#estamps-affidavits" class="hover:text-accent-400 transition-colors">Official e-Stamps & Affidavits</a></li>
                         <li><a href="#csc-works" class="hover:text-accent-400 transition-colors">Digi Seva Kendra Services</a></li>
                         <li><a href="#csc-works" class="hover:text-accent-400 transition-colors">PAN Card & Aadhaar PVC Prints</a></li>
-                        <li><a href="#csc-works" class="hover:text-accent-400 transition-colors">Passport Online Services</a></li>
                         <li><a href="#bulk-services" class="hover:text-accent-400 transition-colors">Bulk Voice Calls & Bulk WhatsApp</a></li>
-                        <li><a href="#bulk-services" class="hover:text-accent-400 transition-colors">AI Posters & Creative Design</a></li>
+                        <li><a href="#bulk-services" class="hover:text-accent-400 transition-colors">Ai Posters & Creative Design</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 3: Computer Courses (3 cols) -->
                 <div class="lg:col-span-3">
-                    <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">SiCE Computer Courses</h4>
+                    <h4 class="font-heading font-bold text-white text-sm uppercase tracking-wider mb-4">Computer Courses</h4>
                     <ul class="space-y-2">
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">Tally ERP 9.0 (Accounting)</a></li>
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">Tally Prime with GST</a></li>
@@ -1907,7 +1950,7 @@
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">DCA & PGDCA Diplomas</a></li>
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">Python & Core Java Coding</a></li>
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">C & C++ Programming</a></li>
-                        <li><a href="#keyboard-typing" class="hover:text-accent-400 transition-colors">Telugu & Hindi Keyboard Typing</a></li>
+                        <li><a href="#keyboard-typing" class="hover:text-accent-400 transition-colors">Anu Script Typing (Apple/DOE)</a></li>
                         <li><a href="#courses" class="hover:text-accent-400 transition-colors">Spoken English & Hindi</a></li>
                     </ul>
                 </div>
@@ -2021,6 +2064,19 @@
 
     <!-- AOS JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Google Translate Element (Hidden, triggered via custom language buttons) -->
+    <div id="google_translate_element" style="display:none; position:absolute; left:-9999px;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'te,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <!-- Main JS -->
     <script src="js/main.js"></script>
 </body>

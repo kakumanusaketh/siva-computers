@@ -1,6 +1,6 @@
 // ========== SIVA TYPE & COMPUTERS - COMPREHENSIVE INTERACTIVE JAVASCRIPT ==========
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     // ===== 1. Initialize AOS (Animate on Scroll) =====
     if (typeof AOS !== 'undefined') {
@@ -79,11 +79,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const sectionId = section.getAttribute('id');
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
                 navLinks.forEach(link => {
-                    link.classList.remove('text-primary-600', 'font-bold');
-                    link.classList.add('text-gray-700');
+                    link.classList.remove('active');
                     if (link.getAttribute('href') === '#' + sectionId) {
-                        link.classList.add('text-primary-600', 'font-bold');
-                        link.classList.remove('text-gray-700');
+                        link.classList.add('active');
                     }
                 });
             }
@@ -129,14 +127,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typewriterEl) {
         const phrases = [
             'All Digital Services',
-            'Color Xerox & Photostat',
-            'Official e-Stamps & Affidavits',
+            'Prints & General Works',
+            'Document Translations',
+            'Official E-Stamps & Affidavits',
             'CSC Works & Digi Seva',
-            'Bulk Voice Calls & WhatsApp',
-            'AI Posters & Designing',
-            'Computers Courses (SiCE)',
+            'Bulk Voice Calls & Bulk WhatsApp',
+            'Ai Posters',
+            'Computer Courses',
             'Tally ERP 9.0 & Tally Prime',
-            'Telugu & Hindi Keyboard Typing'
+            'Anu Script Keyboard Typing'
         ];
         let pIndex = 0;
         let cIndex = 0;
@@ -481,7 +480,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== 13. Interactive Contact Form with WhatsApp Direct Dispatch =====
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
             const formData = new FormData(contactForm);
@@ -629,7 +628,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== 16. Smooth Scroll for Anchor Links =====
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#' || !targetId.startsWith('#')) return;
             const targetEl = document.querySelector(targetId);
@@ -643,4 +642,318 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('✅ Siva Type & Computers: All Digital Services, CSC & SiCE Computer Coaching loaded.');
+
+    // ===== DARK MODE TOGGLE =====
+    const darkToggle = document.getElementById('dark-toggle');
+    const darkToggleMobile = document.getElementById('dark-toggle-mobile');
+    const darkIcon = document.getElementById('dark-icon');
+    const darkIconMobile = document.getElementById('dark-icon-mobile');
+
+    function setDarkMode(isDark) {
+        if (isDark) {
+            document.documentElement.classList.add('dark');
+            if (darkIcon) { darkIcon.classList.remove('fa-moon'); darkIcon.classList.add('fa-sun'); }
+            if (darkIconMobile) { darkIconMobile.classList.remove('fa-moon'); darkIconMobile.classList.add('fa-sun'); }
+            localStorage.setItem('stc-dark-mode', 'true');
+        } else {
+            document.documentElement.classList.remove('dark');
+            if (darkIcon) { darkIcon.classList.remove('fa-sun'); darkIcon.classList.add('fa-moon'); }
+            if (darkIconMobile) { darkIconMobile.classList.remove('fa-sun'); darkIconMobile.classList.add('fa-moon'); }
+            localStorage.setItem('stc-dark-mode', 'false');
+        }
+    }
+
+    // Load saved preference
+    const savedDark = localStorage.getItem('stc-dark-mode');
+    if (savedDark === 'true') {
+        setDarkMode(true);
+    }
+
+    if (darkToggle) {
+        darkToggle.addEventListener('click', () => {
+            setDarkMode(!document.documentElement.classList.contains('dark'));
+        });
+    }
+    if (darkToggleMobile) {
+        darkToggleMobile.addEventListener('click', () => {
+            setDarkMode(!document.documentElement.classList.contains('dark'));
+        });
+    }
+
+    // ===== LANGUAGE TOGGLE (English ↔ Telugu) - FULL PAGE TRANSLATION ENGINE =====
+    const langToggle = document.getElementById('lang-toggle');
+    const langToggleMobile = document.getElementById('lang-toggle-mobile');
+    const langLabel = document.getElementById('lang-label');
+    let currentLang = localStorage.getItem('stc-lang') || 'en';
+
+    // Comprehensive Telugu dictionary for instant, authentic local translation
+    const teluguDict = {
+        // Navigation & General UI
+        'Home': 'హోమ్',
+        'About Us': 'మా గురించి',
+        'Prints & General Works': 'ప్రింట్లు & సాధారణ పనులు',
+        'E-Stamps & Notary Affidavits': 'ఈ-స్టాంపులు & నోటరీ అఫిడవిట్లు',
+        'CSC Works': 'CSC పనులు',
+        'CSC Works (Digi Seva)': 'CSC పనులు (డిజి సేవా)',
+        'Computer Courses': 'కంప్యూటర్ కోర్సులు',
+        'Bulk Voice Calls, Bulk WhatsApp, Ai Posters': 'బల్క్ వాయిస్ కాల్స్, బల్క్ WhatsApp, Ai పోస్టర్లు',
+        'FAQ': 'తరచుగా అడిగే ప్రశ్నలు',
+        'Location': 'స్థానం',
+        'Contact': 'సంప్రదించండి',
+        'Get Service / Enroll': 'సేవ పొందండి / చేరండి',
+        'Request Service / Admission': 'సేవను అభ్యర్థించండి / చేరండి',
+        'Add to Inquiry': 'విచారణకు జోడించండి',
+        'In Cart': 'కార్టులో ఉంది',
+        'View Inquiry Cart': 'విచారణ కార్టును చూడండి',
+        'Inquiry Cart': 'విచారణ కార్ట్',
+        'Chat on WhatsApp': 'WhatsAppలో చాట్ చేయండి',
+        'SERVICES ACTIVE': 'సేవలు అందుబాటులో ఉన్నాయి',
+
+        // Top Header & Info
+        'Established 1999 • 27+ Years of Trusted Digital Services': 'స్థాపన 1999 • 27+ సంవత్సరాల నమ్మకమైన డిజిటల్ సేవలు',
+        'Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla - 522413': 'అమరాన్ బ్యాటరీ భవనం వెనుక, మసీద్ సెంటర్, మెయిన్ రోడ్డు, పిడుగురాళ్ల - 522413',
+        'Digital India & CSC Digi Seva Authorised Center': 'డిజిటల్ ఇండియా & CSC డిజి సేవా అధీకృత కేంద్రం',
+
+        // Hero Section
+        'Your One-Stop Destination for': 'మీ సమగ్ర సేవా కేంద్రం -',
+        'All Digital Services': 'అన్ని డిజిటల్ సేవలు',
+        'Serving Piduguralla & Palnadu District Since 1999': '1999 నుండి పిడుగురాళ్ల & పల్నాడు జిల్లాకు విశ్వసనీయ సేవ',
+        'Explore All Services': 'అన్ని సేవలను చూడండి',
+        'View Computer Courses': 'కంప్యూటర్ కోర్సులను చూడండి',
+        'Digital & CSC Services': 'డిజిటల్ & CSC సేవలు',
+        'Color Xerox, e-Stamps, Digi Seva, Bulk Marketing': 'కలర్ జిరాక్స్, ఈ-స్టాంపులు, డిజి సేవా, బల్క్ మార్కెటింగ్',
+        'Computer Coaching (SiCE)': 'కంప్యూటర్ కోచింగ్ (SiCE)',
+        'SiCE Certified Courses, Telugu & Hindi Typing': 'SiCE సర్టిఫైడ్ కోర్సులు, తెలుగు & హిందీ టైపింగ్',
+        'Masjid Center, Piduguralla': 'మసీద్ సెంటర్, పిడుగురాళ్ల',
+        'View Center Location →': 'కేంద్రం స్థానాన్ని చూడండి →',
+
+        // Stats
+        'Years of Service': 'సేవా సంవత్సరాలు',
+        'Happy Customers': 'సంతోషకరమైన కస్టమర్లు',
+        'Services Available': 'అందుబాటులో ఉన్న సేవలు',
+        'Certified Courses': 'సర్టిఫైడ్ కోర్సులు',
+
+        // Section Badges & Headings
+        'ABOUT SIVA TYPE & COMPUTERS': 'శివ టైప్ & కంప్యూటర్స్ గురించి',
+        'Leading Digital Citizen Services & SiCE Computer Education in Palnadu': 'పల్నాడులో ప్రముఖ డిజిటల్ పౌర సేవలు & SiCE కంప్యూటర్ విద్య',
+        'OUR COMPLETE CAPABILITIES': 'మా సమగ్ర సామర్థ్యాలు',
+        'Prints & General Works': 'ప్రింట్లు & సాధారణ పనులు',
+        'Fast turnaround commercial printing, typing, binding, and official document translation services in Piduguralla.': 'పిడుగురాళ్లలో వేగవంతమైన కమర్షియల్ ప్రింటింగ్, టైపింగ్, బైండింగ్, మరియు అధికారిక డాక్యుమెంట్ అనువాద సేవలు.',
+        'LEGAL & REVENUE SERVICES': 'చట్టపరమైన & రెవెన్యూ సేవలు',
+        'Official e-Stamps & Notary Legal Drafting': 'అధికారిక ఈ-స్టాంపులు & నోటరీ లీగల్ డ్రాఫ్టింగ్',
+        'Government-authorized non-judicial e-Stamps, legal affidavits, and revenue documentation under one roof.': 'ప్రభుత్వ అధీకృత నాన్-జ్యుడీషియల్ ఈ-స్టాంపులు, లీగల్ అఫిడవిట్లు మరియు రెవెన్యూ డాక్యుమెంటేషన్ ఒకే చోట.',
+        'DIGITAL INDIA & CSC DIGI SEVA AUTHORISED CITIZEN SERVICE CENTER': 'డిజిటల్ ఇండియా & CSC డిజి సేవా అధీకృత పౌర సేవా కేంద్రం',
+        'Full Catalog of Citizen & Digital Services': 'పౌర & డిజిటల్ సేవల పూర్తి జాబితా',
+        'All government applications, documentation, online ticketing, digital payments, and commercial printing services available in Piduguralla.': 'పిడుగురాళ్లలో అన్ని ప్రభుత్వ దరఖాస్తులు, డాక్యుమెంటేషన్, ఆన్‌లైన్ టికెటింగ్, డిజిటల్ చెల్లింపులు మరియు వాణిజ్య ప్రింటింగ్ సేవలు అందుబాటులో ఉన్నాయి.',
+        'MARKETING & AI SOLUTIONS': 'మార్కెటింగ్ & AI పరిష్కారాలు',
+        'Bulk Voice Calls, Bulk WhatsApp & Ai Posters': 'బల్క్ వాయిస్ కాల్స్, బల్క్ WhatsApp & Ai పోస్టర్లు',
+        'Next-generation digital marketing and automated broadcasting tools for local businesses, political leaders, events, and schools.': 'స్థానిక వ్యాపారాలు, నాయకులు, వేడుకలు మరియు పాఠశాలల కోసం ఆధునిక డిజిటల్ మార్కెటింగ్ మరియు ప్రచార సాధనాలు.',
+        'GOVERNMENT-RECOGNIZED EDUCATION': 'ప్రభుత్వ గుర్తింపు పొందిన విద్య',
+        'Computer Courses': 'కంప్యూటర్ కోర్సులు',
+        'SiCE Authorized Franchise Training Partner. Job-oriented IT education with ISO verified course certificates.': 'SiCE అధీకృత ఫ్రాంచైజ్ ట్రైనింగ్ భాగస్వామి. ISO సర్టిఫికేట్‌తో ఉద్యోగావకాశాలు కల్పించే IT విద్య.',
+        'SPECIALIZED SKILL TRAINING': 'ప్రత్యేక నైపుణ్య శిక్షణ',
+        'Telugu & Hindi Keyboard Typing': 'తెలుగు & హిందీ కీబోర్డ్ టైపింగ్',
+        'Anu Script with Apple & DOE Keyboards Only': 'అను స్క్రిప్ట్ - ఆపిల్ & DOE కీబోర్డులు మాత్రమే',
+        'Master government and commercial touch-typing on modern PC keyboards. Essential for court, Secretariat, and government typing jobs.': 'ఆధునిక PC కీబోర్డులపై ప్రభుత్వ మరియు వాణిజ్య టచ్ టైపింగ్ నేర్చుకోండి. కోర్టు, సచివాలయ మరియు ప్రభుత్వ ఉద్యోగాలకు ఎంతో అవసరం.',
+        'HELP & SUPPORT': 'సహాయం & మద్దతు',
+        'Frequently Asked Questions': 'తరచుగా అడిగే ప్రశ్నలు',
+        'Everything you need to know about our digital services, SiCE courses, typing training, and admissions.': 'మా డిజిటల్ సేవలు, SiCE కోర్సులు, టైపింగ్ శిక్షణ మరియు ప్రవేశాల గురించి పూర్తి వివరాలు.',
+        'VISIT OUR CENTER': 'మా కేంద్రాన్ని సందర్శించండి',
+        'Conveniently located at Masjid Center on Main Road, Piduguralla with easy access and full parking.': 'పిడుగురాళ్ల మెయిన్ రోడ్డులోని మసీద్ సెంటర్ వద్ద సులభమైన ప్రవేశం మరియు పార్కింగ్ సదుపాయంతో కలదు.',
+        'GET IN TOUCH': 'మమ్మల్ని సంప్రదించండి',
+        'Contact Siva Type & Computers': 'శివ టైప్ & కంప్యూటర్స్‌ను సంప్రదించండి',
+        'Send us a message or inquiry directly via WhatsApp or visit our center in Piduguralla. We respond promptly!': 'WhatsApp ద్వారా నేరుగా సందేశం పంపండి లేదా పిడుగురాళ్లలోని మా కేంద్రాన్ని సందర్శించండి. మేము వెంటనే స్పందిస్తాము!',
+
+        // Specific Service Cards
+        'High-Speed Color Xerox': 'హై-స్పీడ్ కలర్ జిరాక్స్',
+        'Document Translations': 'డాక్యుమెంట్ అనువాదాలు',
+        'Photostat & B/W Copies': 'ఫోటోస్టాట్ & నలుపు-తెలుపు కాపీలు',
+        'DTP (Telugu & English Typing)': 'DTP (తెలుగు & ఇంగ్లీష్ టైపింగ్)',
+        'Spiral & Book Binding': 'స్పైరల్ & బుక్ బైండింగ్',
+        'Lamination Services': 'లామినేషన్ సేవలు',
+        'Scan & E-mail Services': 'స్కాన్ & ఈ-మెయిల్ సేవలు',
+        'Passport Size Photos & Prints': 'పాస్‌పోర్ట్ సైజ్ ఫోటోలు & ప్రింట్లు',
+
+        'Non-Judicial e-Stamps': 'నాన్-జ్యుడీషియల్ ఈ-స్టాంపులు',
+        'Notary Affidavits & Legal Drafting': 'నోటరీ అఫిడవిట్లు & లీగల్ డ్రాఫ్టింగ్',
+        'Rental & Commercial Agreements': 'అద్దె & వాణిజ్య ఒప్పందాలు',
+        'Private EC & Certified Copies': 'ప్రైవేట్ EC & సర్టిఫైడ్ కాపీలు (CC)',
+        'Treasury Challans & Court Fees': 'ట్రెజరీ చలానాలు & కోర్టు ఫీజులు',
+
+        'PAN Card Applications & Seeding': 'PAN కార్డ్ దరఖాస్తులు & సీడింగ్',
+        'Aadhaar PVC Smart Card Print': 'ఆధార్ PVC స్మార్ట్ కార్డ్ ప్రింట్',
+        'Passport Online Services': 'పాస్‌పోర్ట్ ఆన్‌లైన్ సేవలు',
+        'Online Job Applications': 'ఆన్‌లైన్ ఉద్యోగ దరఖాస్తులు',
+        'TTD, Srisailam & Shirdi Darshan': 'తిరుమల, శ్రీశైలం & షిర్డీ దర్శనం',
+        'Electricity & Utility Bills': 'విద్యుత్ & యుటిలిటీ బిల్లులు',
+        'MSME & Govt Loan Schemes': 'MSME & ప్రభుత్వ రుణ పథకాలు',
+        'EPF / PF Services': 'EPF / PF సేవలు',
+
+        'Bulk Voice Calls': 'బల్క్ వాయిస్ కాల్స్',
+        'Bulk WhatsApp Marketing': 'బల్క్ WhatsApp మార్కెటింగ్',
+        'Ai Posters & Flyer Design': 'Ai పోస్టర్లు & ఫ్లయర్ డిజైన్',
+        'DLT Bulk SMS Broadcasting': 'DLT బల్క్ SMS ప్రసారం',
+
+        // Computer Courses
+        'Tally ERP 9.0': 'ట్యాలీ ERP 9.0',
+        'Tally Prime with GST': 'ట్యాలీ ప్రైమ్ విత్ GST',
+        'Python Programming': 'పైథాన్ ప్రోగ్రామింగ్',
+        'Core Java Programming': 'కోర్ జావా ప్రోగ్రామింగ్',
+        'C & C++ Programming': 'C & C++ ప్రోగ్రామింగ్',
+        'DCA (Diploma)': 'DCA (డిప్లొమా ఇన్ కంప్యూటర్ అప్లికేషన్స్)',
+        'PGDCA (Post Graduate Diploma)': 'PGDCA (పోస్ట్ గ్రాడ్యుయేట్ డిప్లొమా)',
+        'MS Office Suite': 'MS ఆఫీస్ సూట్ (Word, Excel, PPT)',
+        'Computer Basics & Windows': 'కంప్యూటర్ బేసిక్స్ & విండోస్',
+        'Spoken English & Communication': 'స్పోకెన్ ఇంగ్లీష్ & కమ్యూనికేషన్',
+        'Spoken Hindi': 'స్పోకెన్ హిందీ',
+
+        // Filter Tabs
+        'All Services (20+)': 'అన్ని సేవలు (20+)',
+        'Printing & Xerox': 'ప్రింటింగ్ & జిరాక్స్',
+        'Aadhaar, PAN & Identity': 'ఆధార్, PAN & గుర్తింపు కార్డులు',
+        'Online Job & Govt Forms': 'ఆన్‌లైన్ ఉద్యోగాలు & ప్రభుత్వ ఫారమ్‌లు',
+        'Bills & Financial': 'బిల్లులు & ఫైనాన్షియల్',
+        'All Courses': 'అన్ని కోర్సులు',
+        'Accounting': 'అకౌంటింగ్',
+        'Programming': 'ప్రోగ్రామింగ్',
+        'Diplomas': 'డిప్లొమా కోర్సులు',
+        'Office & Basics': 'ఆఫీస్ & బేసిక్స్',
+        'Languages': 'భాషలు',
+
+        // Form Fields
+        'Your Full Name': 'మీ పూర్తి పేరు',
+        'WhatsApp / Mobile Number': 'WhatsApp / మొబైల్ నంబర్',
+        'Select Service or Course of Interest': 'మీకు కావలసిన సేవ లేదా కోర్సును ఎంచుకోండి',
+        'Preferred Time / Urgency': 'ప్రాధాన్య సమయం / అత్యవసరం',
+        'Your Message (Optional)': 'మీ సందేశం (ఐచ్ఛికం)',
+        'Submit Request via WhatsApp': 'WhatsApp ద్వారా అభ్యర్థనను పంపండి',
+
+        // Footer
+        'Quick Links': 'ముఖ్యమైన లింకులు',
+        'Center Timings': 'కేంద్రం పని వేళలు',
+        'Monday to Saturday': 'సోమవారం నుండి శనివారం',
+        'Sunday': 'ఆదివారం',
+        'All rights reserved.': 'అన్ని హక్కులు రక్షించబడ్డాయి.'
+    };
+
+    // DOM text node translator with clean caching of original English text
+    function translateDOM(targetLang) {
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+            acceptNode: function (node) {
+                const parent = node.parentElement;
+                if (!parent) return NodeFilter.FILTER_REJECT;
+                const tag = parent.tagName;
+                if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT' || parent.id === 'google_translate_element') {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }, false);
+
+        let node;
+        while ((node = walker.nextNode())) {
+            const raw = node.nodeValue;
+            const trimmed = raw.trim();
+            if (!trimmed || trimmed.length < 2) continue;
+
+            // Cache original English text
+            if (node.__stcOrig === undefined) {
+                node.__stcOrig = raw;
+            }
+
+            if (targetLang === 'te') {
+                // Exact phrase match
+                if (teluguDict[trimmed]) {
+                    node.nodeValue = raw.replace(trimmed, teluguDict[trimmed]);
+                } else {
+                    // Check if any key exists as a substring
+                    for (const [en, te] of Object.entries(teluguDict)) {
+                        if (en.length > 3 && raw.includes(en)) {
+                            raw_replaced = node.nodeValue.split(en).join(te);
+                            node.nodeValue = raw_replaced;
+                        }
+                    }
+                }
+            } else {
+                // Restore pristine English
+                if (node.__stcOrig !== undefined) {
+                    node.nodeValue = node.__stcOrig;
+                }
+            }
+        }
+
+        // Also translate placeholders
+        document.querySelectorAll('input[placeholder], textarea[placeholder]').forEach(input => {
+            if (!input.__stcOrigPlaceholder) {
+                input.__stcOrigPlaceholder = input.getAttribute('placeholder');
+            }
+            if (targetLang === 'te') {
+                const ph = input.__stcOrigPlaceholder.trim();
+                if (teluguDict[ph]) {
+                    input.setAttribute('placeholder', teluguDict[ph]);
+                }
+            } else {
+                input.setAttribute('placeholder', input.__stcOrigPlaceholder);
+            }
+        });
+    }
+
+    // Trigger Google Translate engine to translate any remaining paragraphs and dynamic elements
+    function triggerGoogleTranslate(lang) {
+        const combo = document.querySelector('.goog-te-combo');
+        if (combo) {
+            combo.value = lang;
+            combo.dispatchEvent(new Event('change'));
+            return true;
+        }
+        return false;
+    }
+
+    function applyLanguage(lang) {
+        currentLang = lang;
+        localStorage.setItem('stc-lang', lang);
+
+        // Update toggle button labels
+        if (langLabel) {
+            langLabel.textContent = lang === 'en' ? 'తెలుగు' : 'English';
+        }
+        if (langToggle) {
+            langToggle.setAttribute('title', lang === 'en' ? 'తెలుగులోకి మార్చండి' : 'Switch to English');
+        }
+        if (langToggleMobile) {
+            langToggleMobile.setAttribute('title', lang === 'en' ? 'తెలుగు' : 'English');
+        }
+
+        // 1. Run local high-speed dictionary translation on all DOM text nodes
+        translateDOM(lang);
+
+        // 2. Trigger Google Translate engine (translates any remaining long paragraphs & FAQs)
+        triggerGoogleTranslate(lang);
+
+        // 3. Update document title
+        if (lang === 'te') {
+            document.title = 'శివ టైప్ & కంప్యూటర్స్ | అన్ని డిజిటల్ సేవలు, CSC & SiCE కంప్యూటర్ కోచింగ్ | పిడుగురాళ్ల';
+            document.body.classList.add('font-telugu');
+        } else {
+            document.title = 'Siva Type & Computers | All Digital Services, CSC & SiCE Computer Coaching | Piduguralla';
+            document.body.classList.remove('font-telugu');
+        }
+    }
+
+    // Check if user previously saved Telugu
+    if (currentLang === 'te') {
+        // Wait a slight tick for DOM to settle
+        setTimeout(() => applyLanguage('te'), 200);
+    }
+
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            applyLanguage(currentLang === 'en' ? 'te' : 'en');
+        });
+    }
+    if (langToggleMobile) {
+        langToggleMobile.addEventListener('click', () => {
+            applyLanguage(currentLang === 'en' ? 'te' : 'en');
+        });
+    }
 });
