@@ -9,8 +9,8 @@ Official website for **Siva Type & Computers**, established in 1999 in Pidugural
 ## 📍 Institute & Business Details
 
 - **Business Name:** Siva Type and Computers (శివ టైప్ & కంప్యూటర్స్)
-- **Primary Business:** All Digital Services, Commercial Printing, E-Stamps, CSC Digi Seva, Bulk Voice Calls, Bulk WhatsApp & AI Posters
-- **Secondary Business:** Computer Training Institute (with SiCE Franchise) & Telugu/Hindi Computer Keyboard Typing
+- **Services:** All Digital Services, Commercial Printing, E-Stamps, CSC Digi Seva, Bulk Voice Calls, Bulk WhatsApp & AI Posters
+- **Education & Coaching:** Computer Training Institute (with SiCE Franchise) & Telugu/Hindi Computer Keyboard Typing
 - **Established:** 1999 (27+ Years of Trusted Service)
 - **Address:** Backside of Amaron Battery building, Masjid Center, Main Road, Piduguralla, Palnadu District, Andhra Pradesh — 522413
 - **Google Maps Location:** [https://maps.app.goo.gl/L3iWuotWNSZwYbfq9](https://maps.app.goo.gl/L3iWuotWNSZwYbfq9)
@@ -23,12 +23,12 @@ Official website for **Siva Type & Computers**, established in 1999 in Pidugural
 
 ---
 
-## 🧭 Navigation Tabs & Core Business Structure
+## 🧭 Navigation Tabs & Core Structure
 
-The website is organized following the exact business priority:
+The website includes dedicated sections corresponding to each menu tab:
 
 1. **Home (`#home`):** Hero spotlight on **All Digital Services**, live stats, and quick links.
-2. **About Us (`#about`):** 27+ years legacy, dual business model (Primary: Digital Services, Secondary: SiCE Institute).
+2. **About Us (`#about`):** 27+ years legacy, digital services center, and SiCE computer training.
 3. **Prints & General Works (`#prints-works`):** High-speed Color Xerox, Photostat, DTP in Telugu & English, Spiral Binding, Lamination, Scanning, and Passport size photos.
 4. **E-Stamps, Notary Affidavits etc (`#estamps-affidavits`):** Authorized non-judicial e-Stamps, legal affidavit drafting, rental agreements, private EC & CC retrieval, and online treasury challans.
 5. **CSC Works (`#csc-works`):** Authorized **Digi Seva Kendra**, PAN card applications & Aadhaar seeding, Aadhaar smart color PVC card prints (no updation), Passport online services, DSC tokens, and govt job applications.
@@ -43,63 +43,16 @@ The website is organized following the exact business priority:
 
 ## 🚀 How to Host on GitHub Pages (Step-by-Step)
 
-### Step 1: Create a New GitHub Repository
-1. Log in to [GitHub](https://github.com/).
-2. In the top-right corner, click **`+`** &rarr; **New repository**.
-3. Repository name: e.g. `siva-computers` or `siva-type-computers`.
-4. Set visibility to **Public**.
-5. Leave "Add a README file", ".gitignore", and "license" **unchecked** (we already have them created).
-6. Click **Create repository**.
-
----
-
-### Step 2: Push the Files from Your Computer
+### Step 1: Push the Files from Your Computer
 Open **PowerShell** or **Command Prompt** in `d:\Saketh education\sivacomputrer` and run:
 
 ```bash
-# 1. Initialize git repository
-git init
-
-# 2. Add all files to staging
 git add .
-
-# 3. Create your commit
-git commit -m "Update website: services priority, new tabs, SiCE courses, Digi Seva, Tally ERP 9.0"
-
-# 4. Set main branch
-git branch -M main
-
-# 5. Connect to your GitHub repository (replace <username> and <repo-name> with yours)
-git remote add origin https://github.com/<username>/<repo-name>.git
-
-# 6. Push your website to GitHub
-git push -u origin main
+git commit -m "Fix navbar layout, remove tab labels, clean styling"
+git push origin main
 ```
 
 ---
 
-### Step 3: Turn On GitHub Pages
-1. Open your repository on GitHub.
-2. Click **Settings** (top navigation tab).
-3. On the left sidebar menu, scroll to **Pages**.
-4. Under **Build and deployment**:
-   - **Source:** Select **`Deploy from a branch`**
-   - **Branch:** Select **`main`** and **`/ (root)`**
-5. Click **Save**.
-
----
-
-### Step 4: Visit Your Live Website!
-Wait 1&ndash;2 minutes for GitHub to build the site. Refresh the **Pages** screen — GitHub will show:
-> **Your site is live at `https://<your-username>.github.io/<repo-name>/`**
-
----
-
-### 🔄 Future Updates Workflow
-Whenever you make updates to files:
-```bash
-git add .
-git commit -m "Updated website content"
-git push
-```
-GitHub Pages will automatically rebuild and deploy within 1-2 minutes!
+### Step 2: Access Your Live Website
+Refresh **`https://kakumanusaketh.github.io/siva-computers/`** after 1-2 minutes!
